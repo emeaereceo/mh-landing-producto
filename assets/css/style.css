@@ -1,7 +1,20 @@
-/* body {
-  background-color: #712cf9;
-} */
-
-/* #hero-img {
+#hero-img {
   object-fit: cover;
-} */
+  object-position: center center;
+}
+
+.navbar-nav a:hover {
+  color: #8ab4f8;
+}
+
+.carousel-img {
+  height: 70vh; /* altura adaptable */
+  object-fit: cover; /* evita deformaciones */
+  object-position: center; /* centra la imagen */
+}
+
+@media (max-width: 768px) {
+  .carousel-img {
+    height: 45vh; /* más pequeño en móvil */
+  }
+}

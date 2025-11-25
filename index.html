@@ -14,15 +14,16 @@
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body class="bg-dark">
+  <body class="" style="background-color: #0d1117">
     <nav
-      class="navbar navbar-expand-md bg-dark sticky-top border-bottom"
+      class="navbar navbar-expand-md sticky-top border-bottom"
+      style="background-color: #0d1117"
       data-bs-theme="dark"
     >
       <div class="container">
-        <a class="navbar-brand d-md-none" href="#">
+        <a class="navbar-brand" href="#">
           <i class="bi bi-aperture fs-4 me-1"></i>
-          Aperture
+          Audiofilo
         </a>
         <button
           class="navbar-toggler"
@@ -40,52 +41,37 @@
           id="offcanvas"
           aria-labelledby="offcanvasLabel"
         >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasLabel">Aperture</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav flex-grow-1 justify-content-between">
+          <div class="offcanvas-body ms-auto">
+            <ul class="navbar-nav flex-grow-1">
               <li class="nav-item">
-                <a class="nav-link" href="#" aria-label="Aperture">
-                  <i class="bi bi-aperture fs-4"></i>
-                </a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#">Tour</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Product</a></li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#features">Características</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Enterprise</a>
+                <a class="nav-link" href="#myCarousel">Diseño</a>
               </li>
-              <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#faq">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#wl-form">Unete</a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </nav>
     <main class="container">
-      <!-- TODO : Modificar textos  -->
       <!-- Hero -->
       <section
-        class="row mt-4 p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg"
+        class="row mt-4 p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 shadow-lg"
+        style="border: 1px solid #2b3442"
       >
-        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-          <h1 class="display-4 fw-bold lh-1 text-light">
-            Border hero with cropped image and shadows
-          </h1>
+        <div class="col-lg-6 p-3 p-lg-5 pt-lg-3">
+          <h1 class="display-4 fw-bold lh-1 text-light">Sonido sin límites.</h1>
           <p class="lead text-white">
-            Quickly design and customize responsive mobile-first sites with
-            Bootstrap, the world’s most popular front-end open source toolkit,
-            featuring Sass variables and mixins, responsive grid system,
-            extensive prebuilt components, and powerful JavaScript plugins.
+            Descubre los audífonos diseñados para elevar tu día a día con
+            comodidad y potencia.
           </p>
           <div
             class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3"
@@ -98,13 +84,11 @@
             </button>
           </div>
         </div>
-        <div
-          class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg rounded-3"
-        >
+        <div class="col-lg-5 offset-lg-1 p-0 overflow-hidden rounded-3">
           <img
             id="hero-img"
             class=""
-            src="./assets/img/jason-leung-Q2RIZtBTtaI-unsplash.png"
+            src="./assets/img/pexels-mario-mota-235376087-14935011.jpg"
             alt=""
             width="720"
           />
@@ -113,57 +97,23 @@
 
       <!-- Caracteristicas / Features -->
       <section
+        id="features"
         class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5"
       >
         <div class="col">
           <div
             class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
             style="
-              background-image: url('./assets/img/hp1.jpg');
+              background-image: url('./assets/img/pexels-parag-deshmukh-180046-577769.jpg');
               background-position: center;
             "
           >
             <div
-              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+              class="d-flex flex-column h-100 p-5 pb-3 bg-dark bg-opacity-50"
             >
               <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                Short title, long jacket
+                Cancelación Activa Inteligente
               </h3>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <img
-                    src="https://github.com/twbs.png"
-                    alt="Bootstrap"
-                    width="32"
-                    height="32"
-                    class="rounded-circle border border-white"
-                  />
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg
-                    class="bi me-2"
-                    width="1em"
-                    height="1em"
-                    role="img"
-                    aria-label="Location"
-                  >
-                    <use xlink:href="#geo-fill"></use>
-                  </svg>
-                  <small>Earth</small>
-                </li>
-                <li class="d-flex align-items-center">
-                  <svg
-                    class="bi me-2"
-                    width="1em"
-                    height="1em"
-                    role="img"
-                    aria-label="Duration"
-                  >
-                    <use xlink:href="#calendar3"></use>
-                  </svg>
-                  <small>3d</small>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
@@ -171,51 +121,16 @@
           <div
             class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
             style="
-              background-image: url('./assets/img/hp1.jpg');
+              background-image: url('./assets/img/pexels-www-erzetich-com-2510575.jpg');
               background-position: center;
             "
           >
             <div
-              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+              class="d-flex flex-column h-100 p-5 pb-3 bg-dark bg-opacity-50"
             >
               <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                Much longer title that wraps to multiple lines
+                Sonido de Alta Fidelidad
               </h3>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <img
-                    src="https://github.com/twbs.png"
-                    alt="Bootstrap"
-                    width="32"
-                    height="32"
-                    class="rounded-circle border border-white"
-                  />
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg
-                    class="bi me-2"
-                    width="1em"
-                    height="1em"
-                    role="img"
-                    aria-label="Location"
-                  >
-                    <use xlink:href="#geo-fill"></use>
-                  </svg>
-                  <small>Pakistan</small>
-                </li>
-                <li class="d-flex align-items-center">
-                  <svg
-                    class="bi me-2"
-                    width="1em"
-                    height="1em"
-                    role="img"
-                    aria-label="Duration"
-                  >
-                    <use xlink:href="#calendar3"></use>
-                  </svg>
-                  <small>4d</small>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
@@ -223,56 +138,22 @@
           <div
             class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
             style="
-              background-image: url('./assets/img/hp1.jpg');
+              background-image: url('./assets/img/pexels-mutecevvil-20447501.jpg');
               background-position: center;
             "
           >
-            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 bg-dark bg-opacity-50"
+            >
               <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                Another longer title belongs here
+                Comodidad para Todo el Día
               </h3>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <img
-                    src="https://github.com/twbs.png"
-                    alt="Bootstrap"
-                    width="32"
-                    height="32"
-                    class="rounded-circle border border-white"
-                  />
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg
-                    class="bi me-2"
-                    width="1em"
-                    height="1em"
-                    role="img"
-                    aria-label="Location"
-                  >
-                    <use xlink:href="#geo-fill"></use>
-                  </svg>
-                  <small>California</small>
-                </li>
-                <li class="d-flex align-items-center">
-                  <svg
-                    class="bi me-2"
-                    width="1em"
-                    height="1em"
-                    role="img"
-                    aria-label="Duration"
-                  >
-                    <use xlink:href="#calendar3"></use>
-                  </svg>
-                  <small>5d</small>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Carrusel -->
-      <!-- TODO: Ideas de texto en imagenes -->
       <section
         id="myCarousel"
         class="carousel slide mb-6"
@@ -303,59 +184,57 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
-              src="./assets/img/hp1.jpg"
+              src="./assets/img/pexels-pavel-danilyuk-8000610.jpg"
               alt=""
-              width="100%"
-              height="700px"
+              class="d-block w-100 carousel-img"
             />
             <div class="container">
               <div class="carousel-caption text-start">
-                <h1>Example headline.</h1>
+                <h1>Ligeros, suaves y ergonómicos.</h1>
                 <p class="opacity-75">
-                  Some representative placeholder content for the first slide of
-                  the carousel.
+                  Almohadillas adaptables y estructura balanceada para usar
+                  durante horas sin molestias.
                 </p>
-                <p>
+                <!-- <p>
                   <a class="btn btn-lg btn-primary" href="#">Sign up today</a>
-                </p>
+                </p> -->
               </div>
             </div>
           </div>
           <div class="carousel-item">
             <img
-              src="./assets/img/hp1.jpg"
+              src="./assets/img/pexels-fox-58267-2046807.jpg"
               alt=""
-              width="100%"
-              height="700px"
+              class="d-block w-100 carousel-img"
             />
             <div class="container">
               <div class="carousel-caption">
-                <h1>Another example headline.</h1>
+                <h1>Elegancia que se siente.</h1>
                 <p>
-                  Some representative placeholder content for the second slide
-                  of the carousel.
+                  Líneas limpias, materiales premium y un diseño pensado para
+                  acompañarte en cualquier estilo de vida.
                 </p>
-                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                <!-- <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p> -->
               </div>
             </div>
           </div>
           <div class="carousel-item">
             <img
-              src="./assets/img/hp1.jpg"
+              src="./assets/img/pexels-pavel-danilyuk-8001054.jpg"
               alt=""
-              width="100%"
-              height="700px"
+              class="d-block w-100 carousel-img"
             />
             <div class="container">
               <div class="carousel-caption text-end">
-                <h1>One more for good measure.</h1>
+                <h1>Hechos para resistir más.</h1>
                 <p>
-                  Some representative placeholder content for the third slide of
-                  this carousel.
+                  Fabricados con acabados de alta calidad y componentes
+                  duraderos que mantienen su rendimiento día tras día.
                 </p>
-                <p>
+
+                <!-- <p>
                   <a class="btn btn-lg btn-primary" href="#">Browse gallery</a>
-                </p>
+                </p> -->
               </div>
             </div>
           </div>
@@ -381,9 +260,16 @@
       </section>
 
       <!-- Preguntas y respuestas -->
-      <section class="my-5">
+      <section class="my-5 pt-5" id="faq">
+        <h2 class="text-center text-light mb-4 fw-bold">
+          Todo lo que necesitas saber
+        </h2>
+        <p class="text-center text-secondary mb-5">
+          Resolvemos tus dudas para que disfrutes el mejor sonido.
+        </p>
+
         <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
+          <div class="accordion-item" style="border: 1px solid #2b3442">
             <h2 class="accordion-header">
               <button
                 class="accordion-button bg-dark text-light"
@@ -393,7 +279,7 @@
                 aria-expanded="true"
                 aria-controls="collapseOne"
               >
-                Accordion Item #1
+                ¿Los audífonos son compatibles con cualquier dispositivo?
               </button>
             </h2>
             <div
@@ -401,20 +287,17 @@
               class="accordion-collapse collapse show"
               data-bs-parent="#accordionExample"
             >
-              <div class="accordion-body">
-                <strong>This is the first item’s accordion body.</strong> It is
-                shown by default, until the collapse plugin adds the appropriate
-                classes that we use to style each element. These classes control
-                the overall appearance, as well as the showing and hiding via
-                CSS transitions. You can modify any of this with custom CSS or
-                overriding our default variables. It’s also worth noting that
-                just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+              <div
+                class="accordion-body text-light"
+                style="background-color: #161b22"
+              >
+                Sí, nuestros audífonos funcionan con teléfonos, computadores y
+                tablets que cuenten con Bluetooth 5.0 o superior. No necesitas
+                instalar aplicaciones adicionales.
               </div>
             </div>
           </div>
-          <div class="accordion-item">
+          <div class="accordion-item" style="border: 1px solid #2b3442">
             <h2 class="accordion-header">
               <button
                 class="accordion-button collapsed bg-dark text-light"
@@ -424,7 +307,7 @@
                 aria-expanded="false"
                 aria-controls="collapseTwo"
               >
-                Accordion Item #2
+                ¿Cuánto dura la batería con una sola carga?
               </button>
             </h2>
             <div
@@ -432,20 +315,17 @@
               class="accordion-collapse collapse"
               data-bs-parent="#accordionExample"
             >
-              <div class="accordion-body">
-                <strong>This is the second item’s accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It’s also worth
-                noting that just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+              <div
+                class="accordion-body text-light"
+                style="background-color: #161b22"
+              >
+                La batería ofrece hasta 30 horas de reproducción continua,
+                dependiendo del volumen y el uso de la cancelación activa de
+                ruido.
               </div>
             </div>
           </div>
-          <div class="accordion-item">
+          <div class="accordion-item" style="border: 1px solid #2b3442">
             <h2 class="accordion-header">
               <button
                 class="accordion-button collapsed bg-dark text-light"
@@ -455,7 +335,7 @@
                 aria-expanded="false"
                 aria-controls="collapseThree"
               >
-                Accordion Item #3
+                ¿Son resistentes al agua o al sudor?
               </button>
             </h2>
             <div
@@ -463,16 +343,13 @@
               class="accordion-collapse collapse"
               data-bs-parent="#accordionExample"
             >
-              <div class="accordion-body">
-                <strong>This is the third item’s accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It’s also worth
-                noting that just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+              <div
+                class="accordion-body text-light"
+                style="background-color: #161b22"
+              >
+                Sí, cuentan con certificación IPX5, lo que los hace resistentes
+                a salpicaduras y sudor, ideales para entrenamientos o uso
+                diario.
               </div>
             </div>
           </div>
@@ -480,12 +357,14 @@
       </section>
 
       <!-- Formulario -->
-      <section class="card p-4 align-items-center">
-        <form class="p-4 rounded-4 bg-white needs-validation" novalidate>
+      <section
+        class="card py-5 align-items-center my-5"
+        id="wl-form"
+        style="background-color: #161b22"
+      >
+        <form class="p-4 rounded-4 needs-validation text-light" novalidate>
           <h2 class="mb-3 fw-bold">Únete a la Lista de Espera</h2>
-          <p class="text-muted mb-4">
-            Sé el primero en obtener acceso cuando lancemos.
-          </p>
+          <p class="mb-4">Sé el primero en obtener acceso cuando lancemos.</p>
 
           <div class="mb-3">
             <label
@@ -507,7 +386,7 @@
             </div>
           </div>
 
-          <button type="submit" class="btn btn-primary w-100 btn-lg fw-bold">
+          <button type="submit" class="btn btn-warning w-100 btn-lg fw-bold">
             Unirme a la Waitlist
           </button>
 
